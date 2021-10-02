@@ -1,0 +1,183 @@
+:root {
+  --accent-color: #FFE600;
+  
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  font-size:16px;
+  color:white;
+}
+
+h1 {
+  font-size:48px;
+  font-weight:700;
+}
+
+h1 span {
+  color: var(--accent-color);
+}
+
+header {
+  background-color:black;
+  margin-bottom:0;
+  padding-bottom:20px;
+
+  background-image: url(img/hero-bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+header .site-logo {
+  display:flex;
+  padding:0 4px;
+  margin-right:30px;
+  flex-direction:column;
+  justify-content: flex-end;
+  background-color: var(--accent-color);
+}
+
+footer {
+  background-color:#EBEBEB;
+  color:black;
+  padding: 50px 0;
+}
+
+footer p {
+  text-align:center;
+}
+
+@media (min-width:750px) {
+  footer p {
+    max-width:60%;
+    text-align:left;
+  }
+}
+
+.footer-main {
+  opacity:37%;
+}
+
+.footer-title {
+  font-family: "Basic Sans", sans-serif;
+  font-size:31px;
+  margin-bottom:0;
+}
+
+.footer-body {
+  margin-top:0px;
+}
+
+.container {
+  width:95%;
+  margin:0 auto;
+  max-width:1000px;
+}
+
+.container-nav {
+  display:flex;
+  align-items:stretch;
+}
+
+@media (min-width:750px) {
+  .container-intro-flex {
+    display:flex;
+  }
+  .container-footer-flex {
+    display:flex;
+    
+  }
+  
+}
+nav {
+  height:70px;
+}
+
+nav ul {
+  padding:0;
+  margin:0;
+  height:100%;
+  list-style:none;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+nav li {
+  margin-right: 16px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+nav .current-page {
+  border-bottom: solid var(--accent-color) 1px;
+  padding-bottom:2px;
+}
+
+.hero {
+  padding: 30px 0;
+  margin-top:0;
+}
+
+.hero-text {
+  max-width:600px;
+}
+
+.intro {
+  font-size:18px;
+  color: #404040;
+}
+
+.col {
+  text-align:center;
+}
+.btn, nav {
+  font-size:14px;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color:black;
+  text-decoration: none;
+  font-weight:bold;
+  font-size:14px;
+  display:inline-block;
+  padding:12px 18px;
+}
+
+
+ul.social-list {
+  list-style:none;
+  padding:0;
+  margin-top:30px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+@media (min-width:750px) {
+  ul.social-list {
+    justify-content: left;
+  }
+}
+
+.social-link {
+  color: #000;
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+.social-link:hover {
+  color:#777;
+}
